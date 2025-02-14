@@ -16,11 +16,11 @@ const Header = () => {
 
 <div className="space-x-10  hidden md:block">
 <ul className="flex justify-center items-center space-x-10 text-lg md:text-xl">
-    <Link href={"#"}>    <li className="hover:text-gray-300">About me</li>    </Link>
-    <Link href={"#"}>     <li className="hover:text-gray-300">Skills</li>    </Link>
-    <Link href={"#"}>     <li className="hover:text-gray-300">Portfolio</li>    </Link>
+    <Link href={"/about"}>    <li className="hover:text-gray-300">About me</li>    </Link>
+    <Link href={"/skills"}>     <li className="hover:text-gray-300">Skills</li>    </Link>
+    <Link href={"/portfolio"}>     <li className="hover:text-gray-300">Portfolio</li>    </Link>
    
-    <Link href={"/"}>
+    <Link href={"/contact"}>
 <li><Button className="bg-white text-lg text-black hover:bg-red-400 active:bg-red-400 active:opacity-50 transition-all duration-300">
 Contact us</Button></li>
 </Link>

@@ -1,6 +1,7 @@
 import { Button } from '@/components/ui/button';
-import { AtSign, Github, Linkedin } from 'lucide-react';
+import { AtSign, Database, Github, Laptop, Linkedin, PaintRoller, Palette, PenTool, ServerCog, Settings2, Wrench } from 'lucide-react';
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
 
 const Hero = () => {
@@ -48,6 +49,89 @@ const Hero = () => {
 
         <Button>Read more</Button>
       </section>
+
+        {/* About Section */}
+
+      <section className="bg-[#D7D7D7] w-full">
+        <div className="flex flex-col justify-center items-center py-16 space-y-14">
+          <Link href={"/about"}>
+          <Button className="bg-[#D7D7D7] w-48 py-6 text-lg text-black border-4 border-black tracking-widest hover:text-white">ABOUT ME</Button>
+          </Link>
+
+            <p className="text-md md:text-lg px-20 md:px-36">
+            I am a passionate frontend developer specializing in building responsive and user-friendly web applications. With expertise in Next.js, TypeScript, JavaScript, and Tailwind CSS, I focus on writing clean, maintainable, and efficient code.
+
+I enjoy solving complex problems, learning new technologies, and bringing creative ideas to life. My goal is to create seamless digital experiences that enhance user engagement and performance.
+
+Currently, I am expanding my skills in backend development and API integrations to become a full-stack developer. I love collaborating on projects and exploring new ways to improve my coding abilities.
+
+Let's build something amazing together!
+            </p>
+
+            <Button className="bg-[#D7D7D7] text-black border-x-2 border-black hover:text-white">
+            EXPLORE</Button>
+
+            <Image 
+            src={"/separatorBlack.png"}
+            alt="icon"
+            width={100}
+            height={100}/>
+            
+{/* Design & Development & Maintanance */}
+            <div className="flex flex-col md:flex-row gap-6 px-16">
+
+              {/* Design */}
+              <div>
+                <h1 className="text-lg md:text-xl font-bold tracking-wider">DESIGN</h1>
+                <p className="text-gray-600 mt-2">I create visually appealing, user-friendly, and modern designs that enhance user experience. 
+                  From wireframes to high-fidelity prototypes, I ensure a seamless and engaging interface.</p>
+              <div className="flex mt-4">
+                  <PaintRoller size={40} className="mx-auto text-black"/>
+                  <PenTool size={40} className="mx-auto text-black" />
+                  <Palette size={40} className="mx-auto text-black"/>
+              </div>
+              </div>
+
+
+              <div>
+                <h1 className="text-lg md:text-xl font-bold tracking-wider">DEVELOPMENT</h1>
+                <p className="text-gray-600 mt-2">I specialize in building high-performance web applications using Next.js, TypeScript,
+                   and modern frameworks. My focus is on clean, maintainable, and scalable code.</p>
+                   
+                   <div className="flex mt-4">
+                   <Laptop size={40} className="mx-auto text-black"/>
+                   <ServerCog size={40} className="mx-auto text-black" />
+                   </div>
+              </div>
+
+            </div>
+
+              {/* Maintaince  */}
+                    <div className="flex flex-col items-center">
+                    <h1 className="text-lg md:text-xl font-bold tracking-wider">MAINTENANCE</h1>
+                    <p className="text-gray-600 mt-2 px-16">I provide long-term maintenance and support to ensure smooth performance,
+                       security updates, and feature enhancements for your applications.</p>
+                      <div className="flex gap-4 mt-4">
+                      <Wrench size={40} className="mx-auto text-black" />
+                      <Settings2 size={40} className="mx-auto text-black"/>
+                      <Database size={40} className="mx-auto text-black" />
+                      </div>
+                    </div>
+
+            <Image 
+            src={"/separatorBlack.png"}
+            alt="icon"
+            width={100}
+            height={100}/>
+                    
+
+
+        </div>
+
+
+
+      </section>
+
 
     </div>
   );
