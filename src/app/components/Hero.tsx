@@ -203,10 +203,8 @@ Let's build something amazing together!
 </div>
 
         </div>
-
       </section> 
-
-
+      
     </div>
   );
 };
